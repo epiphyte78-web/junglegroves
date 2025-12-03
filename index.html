@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>junglegroves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- navigation goes here -->
+    <div id="nav-placeholder">loading navigation...</div>
+
+    <h2>community treasure map</h2>
+
+    <div>
+        <input type="text" id="txtFilter" placeholder="search tags...">
+        <button type="button" onclick="GetResults();">filter</button>
+        
+        <select id="selectBox" onchange="GetResults();">
+            <option value="All">all time</option>
+            <option value="week">past week</option>
+            <option value="month">past month</option>
+            <option value="year">past year</option>
+            <option value="decade">past decade</option>
+            <option value="century">past century</option>
+        </select>
+        
+        <span id="myDiv2"></span>
+    </div>
+
+    <hr>
+
+    <div id="myDiv3">loading...</div>
+    <div id="myDiv1"></div>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="jgjavascript.js"></script>
+
+</body>
+</html>
